@@ -47,7 +47,7 @@ def grade(grade)
 end
 
 def sort
-  @roster.map do |gradesymbol, namevalue|
+  @roster.each do |gradesymbol, namevalue|
     puts "#{namevalue} unsorted"
     namevalue.sort!()
     puts "#{namevalue} sorted"
