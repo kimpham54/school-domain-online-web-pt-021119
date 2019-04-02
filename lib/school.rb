@@ -47,12 +47,14 @@ def grade(grade)
 end
 
 def sort
-  @roster.each do |gradesymbol, namevalue|
+  @roster.map do |gradesymbol, namevalue|
     puts "#{namevalue} unsorted"
     namevalue.sort!()
     puts "#{namevalue} sorted"
+    namevalue.sort!()
   end
 end
 
 
 end
+# nil when did map in learn submit, values when use each for sort
